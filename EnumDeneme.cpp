@@ -6,12 +6,12 @@ using namespace std;
 enum class DonerciTipi { Morgis, Prof, Antakya };
 
 struct MenuItem {
-    string aciklama; // içerik
+    string aciklama; 
     int fiyat;
 };
 
 class Menu {
-    map<string, MenuItem> items; // "Ürün Adı" -> {açıklama, fiyat}
+    map<string, MenuItem> items;
 public:
     void add(const string& ad, const string& aciklama, int fiyat) {
         items[ad] = MenuItem{aciklama, fiyat};
@@ -53,3 +53,4 @@ int main() {
     cout << d3.getName() << " menü:\n";
     d3.getMenu().print();
 }
+
